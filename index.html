@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <title>Github User Finder</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="container">
+            <a href="/" class="navbar-brand">Github User Finder</a>
+            <button class="btn btn-light" id="theme">Dark/Light</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="alert"></div>
+        <div class="border p-3">
+            <h1>Github Search Username</h1>
+            <p class="lead">Enter a user name to access user information.</p>
+            <div class="d-flex gap-3">
+                <input class="form-control" type="text" id="search-user">
+                <button class="btn btn-primary btn-lg" id="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div id="profile">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="/js/app.js" type="module"></script>
+</body>
+</html>
